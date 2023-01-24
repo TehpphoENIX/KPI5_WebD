@@ -126,12 +126,33 @@ main {
 
 .hero-banner__title{
     margin:10px 240px 0px;
+    height: 45px;
 
     text-align: center;
     text-transform: lowercase;
     font-style: normal;
     font-size: 32px;
     line-height: 42px;
+}
+
+.buttons{
+    margin: 20px 480px 25px;
+    display: flex;
+    justify-content: space-between;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+    color:black;
+}
+
+.buttons a{
+    padding: 4px 7px;
+}
+
+.buttons a:visited{
+    color:black;
 }
 
 .button-main{
