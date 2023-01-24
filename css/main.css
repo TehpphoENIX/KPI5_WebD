@@ -1,0 +1,144 @@
+/* default styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Pro Light';
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* width classes */
+
+.desktop {
+    display:none;
+}
+
+.tablet {
+    display: none;
+}
+
+.semi-tablet {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (min-width:1101px) {
+    .desktop {
+        display: block;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:1100px) {
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:750px) {
+    .semi-tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .mobile {
+        display: block;
+    }
+}
+
+.header{
+    background: #FFD99F;
+    position: relative;
+    height: 68px;
+    left: 0%;
+    right: 0%;
+
+    justify-content: space-between;
+    padding: 14px 110px;
+}
+
+.inline{
+    display: flex;
+}
+
+.logo {
+    margin: 12px 0px 13px 10px;
+}
+
+.searchbar__input {
+    background: #FFFFFF;
+    border-radius: 100px;
+    width: 550px;
+    height: 43px;
+    padding: 0px 25px;
+    margin: 12px 0px 13px 0px;
+    border: none;
+
+    font-size: 32px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.lang-menu select {
+    border: none;
+    margin: 20px 0px 21px 0px;
+
+    background: none;
+
+    font-size: 24px;
+    line-height: 42px;
+}
+
+.burger {
+    border: none;
+    background: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+
+    position: absolute;
+    left: 100px;
+    top: 116px;
+
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.hero-banner{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-image: url("../asserts/img/banners/hero.svg");
+    /* background-image: conic-gradient(red, yellow, green); */
+
+}
+
+.hero-banner__title{
+    margin:10px 240px 0px;
+
+    text-align: center;
+    text-transform: lowercase;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.button-main{
+    background: #FFD99F;
+    border-radius: 16px;
+}
+
+footer{
+    display: none;
+}

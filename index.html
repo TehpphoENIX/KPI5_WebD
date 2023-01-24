@@ -6,8 +6,8 @@
     <meta name="description" content="my first page">
     <!-- <meta name="keywords" content=""> -->
     <meta name="language" content="EN">
-    <meta name="url" content="http://zarytskyilab02.infinityfreeapp.com/">
-    <link rel="canonical" href="http://zarytskyilab02.infinityfreeapp.com/">
+    <meta name="url" content="">
+    <link rel="canonical" href="">
 
     <!--OG-->
     <!-- <meta property="og:title" content="my first page"/>
@@ -27,243 +27,218 @@
     <link rel="icon" href="asserts/img/icon/favicon-128.png" sizes="128x128">
     <link rel="icon" href="asserts/img/icon/favicon-180.png" sizes="180x180">
     <link rel="icon" href="asserts/img/icon/favicon-192.png" sizes="192x192">
+
+    <link rel="stylesheet" href="css/main.css">
 </HEAD>
 <BODY>
-    <div class="root"> 
-        <header class="header inline">
-            <a href="http://zarytskyilab02.infinityfreeapp.com/" class="logo"> <!--Logo-->
-                <img src="asserts/img/Logo.svg" alt="Moar Books">
-            </a>
-            <form class="searchbar desktop tablet semi-tablet" action="http://zarytskyilab02.infinityfreeapp.com/"><!--Searchbar-->
-                <div class="searchbar__input">
-                       <input type="text" placeholder="search" name="searchbar__input">
-                </div>
-            </form>
-            <!-- <button class="lang-menu desktop"> Language bar
-                <svg width="82" height="43" viewBox="0 0 82 43" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g clip-path="url(#clip0_304_177)">
-                <path d="M5.376 29V12.2H17.52V13.928H7.272V19.664H16.44V21.392H7.272V27.272H17.64V29H5.376ZM21.4541 29V12.2H23.2301L33.8141 25.664V12.2H35.6621V29H34.1501L23.3021 15.224V29H21.4541ZM54.9591 26.72C53.0391 28.432 50.7911 29.288 48.2151 29.288C45.6391 29.288 43.5671 28.464 41.9991 26.816C40.4471 25.152 39.6711 23.08 39.6711 20.6C39.6711 18.232 40.4631 16.192 42.0471 14.48C43.6311 12.768 45.6471 11.912 48.0951 11.912C49.4391 11.912 50.5911 12.096 51.5511 12.464C52.5271 12.832 53.4631 13.392 54.3591 14.144L53.1351 15.584C51.6631 14.304 49.9591 13.664 48.0231 13.664C46.1831 13.664 44.6551 14.344 43.4391 15.704C42.2391 17.048 41.6391 18.68 41.6391 20.6C41.6391 22.632 42.2391 24.304 43.4391 25.616C44.6551 26.928 46.2711 27.584 48.2871 27.584C50.1431 27.584 51.7591 27.024 53.1351 25.904V21.728H48.0231V20.024H54.9591V26.72Z" fill="black"/>
-                <rect x="52" y="8" width="30" height="27" fill="url(#pattern0)"/>
-                </g>
-                <defs>
-                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image0_304_177" transform="translate(0 -0.0555556) scale(0.00195312 0.00217014)"/>
-                </pattern>
-                <clipPath id="clip0_304_177">
-                <rect width="81.6716" height="43" fill="white"/>
-                </clipPath>
-                <image id="image0_304_177" width="512" height="512" xlink:href="data:image/png;base64,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"/>
-                </defs>
-                </svg>
-            </button> -->
-            <form action="" class="lang-menu desktop" id="lang-menu">
-                <select name="language">
-                    <option value="english">ENG</option>
-                    <!-- <option value="ukrainian">УКР</option> -->
-                </select>
-            </form>
-            <a href="http://zarytskyilab02.infinityfreeapp.com/" class="profile desktop tablet"> <!--Profile link-->
-                <img src="asserts/img/Icon.svg" alt="Profile">
-            </a>
-            <button class="burger"> <!--Burger-->
-                <img src="asserts/img/Burger.svg" alt="Menu">
-            </button>
-        </header>
-        <main>
-            <div class="dummy desktop tablet"></div>
-
-            <section class="hero-banner">
-            <h1 class="hero-banner__title">Save big with autumn sale</h1>
-            <div class="buttons inline desktop tablet semi-tablet">
-                <a href="http://zarytskyilab02.infinityfreeapp.com/" class="buttons__1 button-main">Shop now</a>
-                <a href="http://zarytskyilab02.infinityfreeapp.com/" class="buttons__2">See details</a>
+    <!-- <div class="root">  -->
+    <header class="header inline">
+        <a href="" class="logo"> <!--Logo-->
+            <img src="asserts/img/Logo.svg" alt="Moar Books">
+        </a>
+        <form class="searchbar semi-tablet tablet desktop" action=""><!--Searchbar-->
+            <input type="text" placeholder="search" name="searchbar__input" class="searchbar__input">
+        </form>
+        <form action="" class="lang-menu desktop" id="lang-menu">
+            <select name="language">
+                <option value="english">ENG</option>
+                <!-- <option value="ukrainian">УКР</option> -->
+            </select>
+        </form>
+        <a href="" class="profile desktop tablet"> <!--Profile link-->
+            <img src="asserts/img/Icon.svg" alt="Profile">
+        </a>
+        <button class="burger"> <!--Burger-->
+            <img src="asserts/img/Burger.svg" alt="Menu">
+        </button>
+    </header>
+    <main>
+        <div class="dummy desktop tablet"></div>
+        <section class="hero-banner">
+        <h1 class="hero-banner__title">Save big with autumn sale</h1>
+        <div class="buttons inline desktop tablet semi-tablet">
+            <a href="" class="buttons__1 button-main">Shop now</a>
+            <a href="" class="buttons__2">See details</a>
+        </div>
+        </section>
+        <form class="mobile-searchbar mobile" action=""><!--Searchbar-->
+            <div class="mobile-searchbar__input">
+                   <input type="text" placeholder="search" name="mobile-searchbar__input">
             </div>
-            </section>
-            <form class="mobile-searchbar mobile" action="http://zarytskyilab02.infinityfreeapp.com/"><!--Searchbar-->
-                <div class="mobile-searchbar__input">
-                       <input type="text" placeholder="search" name="mobile-searchbar__input">
-                </div>
-            </form>
-
-            <section class="bookshelf">
-            <div class="bookshelf-head inline">
-                <h2 class="bookshelf-head__name">Bookshelf name</h2>
-                <p class="bookshelf-head__more"><a href="http://zarytskyilab02.infinityfreeapp.com/"><span class="desktop tablet semi-tablet">learn</span> more</a></p>
-            </div>
-            <div class="inline">
-                <img class="bookshelf__arrow1" src="asserts/img/arrow1.svg" alt="<">
-                <div class="bookshelf-body inline"><!--contents here-->
-                    <div class="book"> <!--book 1-->
-                        <img src="asserts/img/book_covers/cover1.svg" alt="cover" class="book__cover"> <!--book-->
-                        <h1 class="book__title"> <!--name-->
-                            HEADLINE text here
-                        </h1>
-                        <div class="book__description">
-                            <p>Author unknown</p>
-                            <p>hardcover</p>
-                        </div>
-                        <a href="http://zarytskyilab02.infinityfreeapp.com/" class="book__button button-main">Buy now</a><!--CTA-->
+        </form>
+        <section class="bookshelf">
+        <div class="bookshelf-head inline">
+            <h2 class="bookshelf-head__name">Bookshelf name</h2>
+            <p class="bookshelf-head__more"><a href=""><span class="desktop tablet semi-tablet">learn</span> more</a></p>
+        </div>
+        <div class="inline">
+            <img class="bookshelf__arrow1" src="asserts/img/arrow1.svg" alt="<">
+            <div class="bookshelf-body inline"><!--contents here-->
+                <div class="book"> <!--book 1-->
+                    <img src="asserts/img/book_covers/cover1.svg" alt="cover" class="book__cover"> <!--book-->
+                    <h1 class="book__title"> <!--name-->
+                        HEADLINE text here
+                    </h1>
+                    <div class="book__description">
+                        <p>Author unknown</p>
+                        <p>hardcover</p>
                     </div>
-                    <div class="book"> <!--book 2-->
-                        <img src="asserts/img/book_covers/cover02.svg" alt="cover" class="book__cover"> <!--book-->
-                        <h1 class="book__title"> <!--name-->
-                            Slogan goes here
-                        </h1>
-                        <div class="book__description">
-                            <p>Author unknown</p>
-                            <p>hardcover</p>
-                        </div>
-                        <a href="http://zarytskyilab02.infinityfreeapp.com/" class="book__button button-main">Buy now</a><!--CTA-->
-                    </div>                
-                    <div class="book"> <!--book 3-->
-                        <img src="asserts/img/book_covers/cover03.svg" alt="cover" class="book__cover"> <!--book-->
-                        <h1 class="book__title"> <!--name-->
-                            Exclusive Design
-                        </h1>
-                        <div class="book__description">
-                            <p>Author unknown</p>
-                            <p>paperback</p>
-                        </div>
-                        <a href="http://zarytskyilab02.infinityfreeapp.com/" class="book__button button-main">Buy now</a><!--CTA-->
+                    <a href="" class="book__button button-main">Buy now</a><!--CTA-->
+                </div>
+                <div class="book"> <!--book 2-->
+                    <img src="asserts/img/book_covers/cover02.svg" alt="cover" class="book__cover"> <!--book-->
+                    <h1 class="book__title"> <!--name-->
+                        Slogan goes here
+                    </h1>
+                    <div class="book__description">
+                        <p>Author unknown</p>
+                        <p>hardcover</p>
                     </div>
-                    <div class="book desktop tablet semi-tablet"> <!--book 4-->
-                        <img src="asserts/img/book_covers/cover04.svg" alt="cover" class="book__cover"> <!--book-->
-                        <h1 class="book__title"> <!--name-->
-                            Creative Cover
-                        </h1>
-                        <div class="book__description">
-                            <p>Author unknown</p>
-                            <p>paperback</p>
-                        </div>
-                        <a href="http://zarytskyilab02.infinityfreeapp.com/" class="book__button button-main">Buy now</a><!--CTA-->
+                    <a href="" class="book__button button-main">Buy now</a><!--CTA-->
+                </div>                
+                <div class="book"> <!--book 3-->
+                    <img src="asserts/img/book_covers/cover03.svg" alt="cover" class="book__cover"> <!--book-->
+                    <h1 class="book__title"> <!--name-->
+                        Exclusive Design
+                    </h1>
+                    <div class="book__description">
+                        <p>Author unknown</p>
+                        <p>paperback</p>
                     </div>
-                    <div class="book desktop tablet"> <!--book 5-->
-                        <img src="asserts/img/book_covers/cover05.svg" alt="cover" class="book__cover"> <!--book-->
-                        <h1 class="book__title"> <!--name-->
-                            Headline text here, Empire strikes back
-                        </h1>
-                        <div class="book__description">
-                            <p>Author unknown</p>
-                            <p>paperback</p>
-                        </div>
-                        <a href="http://zarytskyilab02.infinityfreeapp.com/" class="book__button button-main">Buy now</a><!--CTA-->
+                    <a href="" class="book__button button-main">Buy now</a><!--CTA-->
+                </div>
+                <div class="book desktop tablet semi-tablet"> <!--book 4-->
+                    <img src="asserts/img/book_covers/cover04.svg" alt="cover" class="book__cover"> <!--book-->
+                    <h1 class="book__title"> <!--name-->
+                        Creative Cover
+                    </h1>
+                    <div class="book__description">
+                        <p>Author unknown</p>
+                        <p>paperback</p>
                     </div>
+                    <a href="" class="book__button button-main">Buy now</a><!--CTA-->
                 </div>
-                <img class="bookshelf__arrow2"  src="asserts/img/arrow2.svg" alt=">">
-            </div>
-            </section>
-
-            <section class="categories inline desktop tablet">
-                <div class="banner">
-                    <h2 class="banner__name desktop">Science fiction</h2>
-                    <a class="banner__image" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/banners/Category1.svg" alt="science fiction"></a>
-                </div>
-                <div class="banner">
-                    <h2 class="banner__name desktop">Educational books</h2>
-                    <a class="banner__image" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/banners/Category2.svg" alt="science fiction"></a>
-                </div>
-            </section>
-            <section class="categories semi-tablet mobile">
-                <div class="banner">
-                    <h2 class="banner__name desktop">Science fiction</h2>
-                    <a class="banner__image" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/banners/Category1.svg" alt="science fiction"></a>
-                </div>
-                <div class="banner">
-                    <h2 class="banner__name desktop">Educational books</h2>
-                    <a class="banner__image" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/banners/Category2.svg" alt="science fiction"></a>
-                </div>
-            </section>
-
-            <div class="CTA-section">
-                <a href="http://zarytskyilab02.infinityfreeapp.com/" class="CTA-section__button button-main">Browse more</a>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="quick-links inline"><!--quick links-->
-                <div class="links-column">
-                    <h2 class="links-column__title">Support<a class="semi-tablet mobile" href="http://zarytskyilab02.infinityfreeapp.com/">Support</a></h2>
-                    <div class="desktop tablet">
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Order status</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Shipping</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Return policy</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Support center</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Payment methods</p></a>
+                <div class="book desktop tablet"> <!--book 5-->
+                    <img src="asserts/img/book_covers/cover05.svg" alt="cover" class="book__cover"> <!--book-->
+                    <h1 class="book__title"> <!--name-->
+                        Headline text here, Empire strikes back
+                    </h1>
+                    <div class="book__description">
+                        <p>Author unknown</p>
+                        <p>paperback</p>
                     </div>
-                </div>
-                <div class="links-column">
-                    <h2 class="links-column__title">Shop<a class="semi-tablet mobile" href="http://zarytskyilab02.infinityfreeapp.com/">Shop</a></h2>
-                    <div class="desktop tablet">
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Gift certificate</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Wholesale</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Deals & discounts</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Reviews</p></a>
-                    </div>
-                </div>
-                <div class="links-column">
-                    <h2 class="links-column__title">Our services<a class="semi-tablet mobile" href="http://zarytskyilab02.infinityfreeapp.com/">Our services</a></h2>
-                    <div class="desktop tablet">
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>shipment</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Libraries</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Campus</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Booksellers</p></a>
-                    </div>
-                </div>
-                <div class="links-column">
-                    <h2 class="links-column__title">About us<a class="semi-tablet mobile" href="http://zarytskyilab02.infinityfreeapp.com/">About us</a></h2>
-                    <div class="desktop tablet">
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>History</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Contacts</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Blog</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>Press & media</p></a>
-                        <a class="links-column__contents" href="http://zarytskyilab02.infinityfreeapp.com/"><p>careers</p></a>
-                    </div>
+                    <a href="" class="book__button button-main">Buy now</a><!--CTA-->
                 </div>
             </div>
-
-            <div class="inline desktop tablet">
-                <div class="mail-sub"> <!--Deals in inbox-->
-                    <h2 class="mail-sub__title">Get our deals in your inbox</h2>
-                    <form action="http://zarytskyilab02.infinityfreeapp.com/">
-                        <div class="searchbar">
-                           <input class="mail-sub__input" type="text" placeholder="e-mail" name="mail-sub__input">
-                           <input class="mail-sub__button" type="button" value="Subscribe">
-                        </div>
-                    </form>
-                </div>
-
-                <div class="media-sub"> <!--Media-->
-                    <h2 class="media-sub__title">Follow us on media</h2>
-                    <div class="medias inline">
-                        <a class="medias__facebook" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/facebook.svg" alt="facebook"></a>
-                        <a class="medias__pinterest" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/pinterest.svg" alt="pinterest"></a>
-                        <a class="medias__twitter" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/twitter.svg" alt="twitter"></a>
-                    </div>
+            <img class="bookshelf__arrow2"  src="asserts/img/arrow2.svg" alt=">">
+        </div>
+        </section>
+        <section class="categories inline desktop tablet">
+            <div class="banner">
+                <h2 class="banner__name desktop">Science fiction</h2>
+                <a class="banner__image" href=""><img src="asserts/img/banners/Category1.svg" alt="science fiction"></a>
+            </div>
+            <div class="banner">
+                <h2 class="banner__name desktop">Educational books</h2>
+                <a class="banner__image" href=""><img src="asserts/img/banners/Category2.svg" alt="science fiction"></a>
+            </div>
+        </section>
+        <section class="categories semi-tablet mobile">
+            <div class="banner">
+                <h2 class="banner__name desktop">Science fiction</h2>
+                <a class="banner__image" href=""><img src="asserts/img/banners/Category1.svg" alt="science fiction"></a>
+            </div>
+            <div class="banner">
+                <h2 class="banner__name desktop">Educational books</h2>
+                <a class="banner__image" href=""><img src="asserts/img/banners/Category2.svg" alt="science fiction"></a>
+            </div>
+        </section>
+        <div class="CTA-section">
+            <a href="" class="CTA-section__button button-main">Browse more</a>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="quick-links inline"><!--quick links-->
+            <div class="links-column">
+                <h2 class="links-column__title">Support<a class="semi-tablet mobile" href="">Support</a></h2>
+                <div class="desktop tablet">
+                    <a class="links-column__contents" href=""><p>Order status</p></a>
+                    <a class="links-column__contents" href=""><p>Shipping</p></a>
+                    <a class="links-column__contents" href=""><p>Return policy</p></a>
+                    <a class="links-column__contents" href=""><p>Support center</p></a>
+                    <a class="links-column__contents" href=""><p>Payment methods</p></a>
                 </div>
             </div>
-            <div class="semi-tablet mobile">
-                <div class="mail-sub"> <!--Deals in inbox-->
-                    <h2 class="mail-sub__title">Get our deals in your inbox</h2>
-                    <form action="http://zarytskyilab02.infinityfreeapp.com/">
-                        <div class="searchbar">
-                           <input class="mail-sub__input" type="text" placeholder="e-mail" name="mail-sub__input">
-                           <input class="mail-sub__button" type="button" value="Subscribe">
-                        </div>
-                    </form>
-                </div>
-
-                <div class="media-sub"> <!--Media-->
-                    <h2 class="media-sub__title">Follow us on media</h2>
-                    <div class="medias inline">
-                        <a class="medias__facebook" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/facebook.svg" alt="facebook"></a>
-                        <a class="medias__pinterest" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/pinterest.svg" alt="pinterest"></a>
-                        <a class="medias__twitter" href="http://zarytskyilab02.infinityfreeapp.com/"><img src="asserts/img/twitter.svg" alt="twitter"></a>
-                    </div>
+            <div class="links-column">
+                <h2 class="links-column__title">Shop<a class="semi-tablet mobile" href="">Shop</a></h2>
+                <div class="desktop tablet">
+                    <a class="links-column__contents" href=""><p>Gift certificate</p></a>
+                    <a class="links-column__contents" href=""><p>Wholesale</p></a>
+                    <a class="links-column__contents" href=""><p>Deals & discounts</p></a>
+                    <a class="links-column__contents" href=""><p>Reviews</p></a>
                 </div>
             </div>
-
-            <p class="copyright">Made by Kyrylo Zarytskyi</p> <!--copyright info-->
-        </footer>
-    </div>
+            <div class="links-column">
+                <h2 class="links-column__title">Our services<a class="semi-tablet mobile" href="">Our services</a></h2>
+                <div class="desktop tablet">
+                    <a class="links-column__contents" href=""><p>shipment</p></a>
+                    <a class="links-column__contents" href=""><p>Libraries</p></a>
+                    <a class="links-column__contents" href=""><p>Campus</p></a>
+                    <a class="links-column__contents" href=""><p>Booksellers</p></a>
+                </div>
+            </div>
+            <div class="links-column">
+                <h2 class="links-column__title">About us<a class="semi-tablet mobile" href="">About us</a></h2>
+                <div class="desktop tablet">
+                    <a class="links-column__contents" href=""><p>History</p></a>
+                    <a class="links-column__contents" href=""><p>Contacts</p></a>
+                    <a class="links-column__contents" href=""><p>Blog</p></a>
+                    <a class="links-column__contents" href=""><p>Press & media</p></a>
+                    <a class="links-column__contents" href=""><p>careers</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="inline desktop tablet">
+            <div class="mail-sub"> <!--Deals in inbox-->
+                <h2 class="mail-sub__title">Get our deals in your inbox</h2>
+                <form action="">
+                    <div class="searchbar">
+                       <input class="mail-sub__input" type="text" placeholder="e-mail" name="mail-sub__input">
+                       <input class="mail-sub__button" type="button" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+            <div class="media-sub"> <!--Media-->
+                <h2 class="media-sub__title">Follow us on media</h2>
+                <div class="medias inline">
+                    <a class="medias__facebook" href=""><img src="asserts/img/facebook.svg" alt="facebook"></a>
+                    <a class="medias__pinterest" href=""><img src="asserts/img/pinterest.svg" alt="pinterest"></a>
+                    <a class="medias__twitter" href=""><img src="asserts/img/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="semi-tablet mobile">
+            <div class="mail-sub"> <!--Deals in inbox-->
+                <h2 class="mail-sub__title">Get our deals in your inbox</h2>
+                <form action="">
+                    <div class="searchbar">
+                       <input class="mail-sub__input" type="text" placeholder="e-mail" name="mail-sub__input">
+                       <input class="mail-sub__button" type="button" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+            <div class="media-sub"> <!--Media-->
+                <h2 class="media-sub__title">Follow us on media</h2>
+                <div class="medias inline">
+                    <a class="medias__facebook" href=""><img src="asserts/img/facebook.svg" alt="facebook"></a>
+                    <a class="medias__pinterest" href=""><img src="asserts/img/pinterest.svg" alt="pinterest"></a>
+                    <a class="medias__twitter" href=""><img src="asserts/img/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Made by Kyrylo Zarytskyi</p> <!--copyright info-->
+    </footer>
+    <!-- </div> -->
 
 
 </BODY>
